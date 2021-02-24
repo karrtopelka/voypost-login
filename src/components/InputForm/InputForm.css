@@ -6,6 +6,7 @@
   top: 137px;
   background: #fefefe;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
   border-radius: 10px;
 }
 
@@ -24,7 +25,7 @@
 .input__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 83px !important;
+  padding-top: 64px !important;
 }
 
 .input__wrapper div {
@@ -36,6 +37,53 @@
   padding-top: 32px !important;
 }
 
+.input__wrapper > div:active {
+  color: var(--third) !important;
+}
+
 .input__wrapper > div:last-child > label {
   top: auto !important;
+}
+
+.input__button {
+  margin-top: 110px !important;
+  background: var(--second) !important;
+  border-radius: 5px !important;
+  height: 48px;
+  width: 212px;
+  color: var(--first) !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 19px !important;
+  letter-spacing: 0em !important;
+  text-align: left !important;
+}
+
+.input__button_disabled {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+  cursor: default;
+  pointer-events: none;
+  background: var(--zero) !important;
+}
+
+.input__forgot {
+  padding-top: 16px;
+  text-decoration: underline;
+  color: var(--zero);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+
+.input__register {
+  padding-top: 16px;
+  display: flex;
+}
+
+.input__register > p:last-child {
+  color: #4285f4;
+  padding-left: 9px;
 }

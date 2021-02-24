@@ -1,15 +1,4 @@
-import {
-  Button,
-  Card,
-  CardContent,
-  FormControl,
-  FormHelperText,
-  Grid,
-  IconButton,
-  InputAdornment,
-  InputLabel,
-  OutlinedInput,
-} from '@material-ui/core';
+import { Button, Grid, IconButton, InputAdornment } from '@material-ui/core';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -26,11 +15,10 @@ const InputForm = () => {
   const email = useSelector(selectEmail);
   const password = useSelector(selectPassword);
   const [showPassword, setShowPassword] = useState(false);
-  const dispatch = useDispatch();
 
   return (
-    <Card className="input__root">
-      <CardContent>
+    <div className="input__root">
+      <div>
         <Grid container direction="column" justify="center" alignItems="center">
           <h1 className="input__title">Login</h1>
           <div className="input__wrapper">
@@ -61,15 +49,23 @@ const InputForm = () => {
               }
             />
           </div>
-          <Button variant="contained">Log In</Button>
-          <p>Forgot your password?</p>
-          <div>
+          <Button
+            disabled
+            variant="contained"
+            className={`input__button ${
+              (password && email) || 'input__button_disabled'
+            }`}
+          >
+            Log In
+          </Button>
+          <p className="input__forgot">Forgot your password?</p>
+          <div className="input__register">
             <p>Don’t have an account yet?</p>
             <p>Register</p>
           </div>
         </Grid>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 };
 
