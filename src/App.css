@@ -1,24 +1,32 @@
 .app__boy {
-  position: absolute;
   z-index: 2;
+}
+
+.app__items {
+  position: absolute;
+}
+
+.app__plus1,
+.app__plus2,
+.app__left__footer,
+.app__middle__footer,
+.app__right__footer {
+  visibility: hidden;
 }
 
 .app__spiral {
   z-index: 3;
-  position: absolute;
   bottom: 6px;
   right: 591px;
 }
 
 .app__spiral2 {
   z-index: 3;
-  position: absolute;
   bottom: 160px;
   left: 0px;
 }
 
-.app > div:last-child {
-  position: absolute;
+.app__wave {
   bottom: -10px;
   left: 0;
   z-index: -1;
@@ -33,7 +41,7 @@
     width: 100%;
   }
 
-  .app > div:last-child {
+  .app__wave {
     bottom: -60px;
   }
 
@@ -46,5 +54,69 @@
   .app__spiral2 {
     bottom: 100px;
     left: 0px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .app__boy {
+    visibility: hidden;
+  }
+
+  .app__spiral {
+    top: 0;
+    left: 35px;
+    bottom: auto;
+    right: auto;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    transform: rotate(-32.87deg);
+  }
+
+  .app__spiral2 {
+    left: 82.77%;
+    right: auto;
+    top: 50.95%;
+    bottom: auto;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    transform: rotate(20deg);
+  }
+
+  .app__plus1,
+  .app__plus2,
+  .app__left__footer,
+  .app__middle__footer,
+  .app__right__footer {
+    visibility: visible;
+  }
+
+  .app__plus1 {
+    left: 85.16%;
+    right: 8.46%;
+    top: 9.35%;
+    bottom: 86.55%;
+    transform: rotate(-18.74deg);
+  }
+
+  .app__plus2 {
+    left: 11px;
+    top: 554px;
+  }
+
+  .app__left__footer {
+    left: 1.43%;
+    bottom: 2.3%;
+  }
+
+  .app__middle__footer {
+    left: 35.83%;
+    bottom: 0%;
+  }
+
+  .app__right__footer {
+    left: 69.6%;
+    bottom: 0;
+  }
+
+  .app__wave {
+    bottom: -80px;
   }
 }
