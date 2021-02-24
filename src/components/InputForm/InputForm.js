@@ -50,7 +50,10 @@ const InputForm = () => {
             />
           </div>
           <Button
-            disabled
+            type="submit"
+            onClick={() => {
+              alert(`email: ${email}, password: ${password}`);
+            }}
             variant="contained"
             className={`input__button ${
               (password && email) || 'input__button_disabled'
