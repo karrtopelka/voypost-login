@@ -1,7 +1,7 @@
 import { Button, Grid, IconButton, InputAdornment } from '@material-ui/core';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './InputForm.css';
 import {
   changeEmail,
