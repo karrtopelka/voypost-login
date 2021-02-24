@@ -6,7 +6,7 @@
   top: 137px;
   background: #fefefe;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-
+  z-index: 10;
   border-radius: 10px;
 }
 
@@ -20,6 +20,7 @@
   text-align: left;
   text-transform: uppercase;
   padding-top: 88px;
+  color: var(--fifth);
 }
 
 .input__wrapper {
@@ -32,6 +33,7 @@
   height: 48px;
   border-color: var(--zero);
   color: var(--zero) !important;
+  border-radius: 10px;
 }
 
 .MuiInputLabel-outlined {
@@ -92,4 +94,16 @@
   text-decoration: none;
   color: #4285f4;
   padding-left: 9px;
+}
+
+@media (max-width: 1024px) {
+  .input__root {
+    height: 600px;
+    width: 488px;
+    right: 16px;
+    top: 71px;
+  }
+  .input__button {
+    margin-top: 135px !important;
+  }
 }

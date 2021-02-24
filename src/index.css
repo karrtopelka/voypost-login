@@ -11,8 +11,8 @@
   --first: #fefefe;
   --second: linear-gradient(90deg, #ff9146 0%, #ff351b 100%);
   --third: #f4604d;
-  --fourth: #10204c;
-  --fifth: #b2b7bb;
+  --fourth: #f4604d;
+  --fifth: #10204c;
 }
 
 body {
