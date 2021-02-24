@@ -1,0 +1,41 @@
+.input__root {
+  position: absolute;
+  width: 566px;
+  height: 626px;
+  right: 24px;
+  top: 137px;
+  background: #fefefe;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.input__title {
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 88px;
+}
+
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 83px !important;
+}
+
+.input__wrapper div {
+  border-color: var(--zero);
+  color: var(--zero) !important;
+}
+
+.input__wrapper > div:last-child {
+  padding-top: 32px !important;
+}
+
+.input__wrapper > div:last-child > label {
+  top: auto !important;
+}
