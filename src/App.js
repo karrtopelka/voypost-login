@@ -3,6 +3,7 @@ import './App.css';
 import InputForm from './components/InputForm/InputForm';
 import main_image from './assets/main_image.png';
 import main_spiral from './assets/main_spiral.png';
+import main_spiral2 from './assets/main_spiral2.png';
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
         <img src={`${main_image}`} alt="main__boy" />
       </div>
       <div className="app__spiral">
-        <img src={`${main_spiral}`} alt="main__boy" />
+        <img src={`${main_spiral}`} alt="main__spiral" />
+      </div>
+      <div className="app__spiral2">
+        <img src={`${main_spiral2}`} alt="main__spiral2" />
       </div>
       <div>
         <svg

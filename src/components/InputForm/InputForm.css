@@ -29,8 +29,13 @@
 }
 
 .input__wrapper div {
+  height: 48px;
   border-color: var(--zero);
   color: var(--zero) !important;
+}
+
+.MuiInputLabel-outlined {
+  transform: translate(14px, 16px) scale(1);
 }
 
 .input__wrapper > div:last-child {
@@ -83,7 +88,8 @@
   display: flex;
 }
 
-.input__register > p:last-child {
+.input__register > a {
+  text-decoration: none;
   color: #4285f4;
   padding-left: 9px;
 }

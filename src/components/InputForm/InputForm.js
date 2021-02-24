@@ -61,7 +61,7 @@ const InputForm = () => {
           <p className="input__forgot">Forgot your password?</p>
           <div className="input__register">
             <p>Don’t have an account yet?</p>
-            <p>Register</p>
+            <a href="#">Register</a>
           </div>
         </Grid>
       </div>
